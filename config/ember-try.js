@@ -9,6 +9,7 @@ module.exports = function() {
     getChannelURL('canary')
   ]).then((urls) => {
     return {
+      useYarn: true,
       scenarios: [
         {
           name: 'ember-lts-2.12',
@@ -35,10 +36,24 @@ module.exports = function() {
           }
         },
         {
-          name: 'ember-release',
+          name: 'ember-release-qunit',
           npm: {
             devDependencies: {
               'ember-source': urls[0]
+            }
+          }
+        },
+        {
+          name: 'ember-release-mocha',
+          npm: {
+            devDependencies: {
+              '@test-ui/qunit': null,
+              '@test-ui/mocha': '^1.0.0',
+              'ember-source': urls[0],
+              'ember-mocha': "*",
+              'qunit-dom': null,
+              'ember-cli-chai': '^0.4.0',
+              'ember-cli-qunit': null
             }
           }
         },

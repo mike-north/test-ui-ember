@@ -1,0 +1,23 @@
+import Application from '../app';
+import config from '../config/environment';
+import { setApplication } from '@ember/test-helpers';
+import { start } from 'ember-qunit';
+import { IFrameConnectionServer } from '@test-ui/core';
+import { QUnitTestServer } from '@test-ui/qunit';
+import QUnit from 'qunit';
+
+setApplication(Application.create(config.APP));
+
+if (window && window.parent !== window) {
+  // Tests are running in an iFrame
+  start({ startTests: false });
+  // Set the server up
+  let srv = new QUnitTestServer(QUnit, {
+    connection: new IFrameConnectionServer()
+  });
+
+  // Start it
+  srv.start();
+} else {
+  start();
+}

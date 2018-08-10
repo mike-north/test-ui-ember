@@ -1,0 +1,1 @@
+export { default } from '@test-ui/ember/components/test-ui-frame';

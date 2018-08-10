@@ -7,6 +7,15 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('red');
+  this.route('green');
+  this.route('blue');
+  this.route('yellow');
+  this.route('orange');
+  this.route('purple');
+  this.route('grey');
+  this.route('black');
+  this.route('white');
 });
 
 export default Router;

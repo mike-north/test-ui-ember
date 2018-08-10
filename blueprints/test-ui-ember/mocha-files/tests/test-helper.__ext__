@@ -1,0 +1,20 @@
+import Application from '../app';
+import config from '../config/environment';
+import { setApplication } from '@ember/test-helpers';
+import { MochaTestServer } from '@test-ui/mocha';
+import { IFrameServerConnection } from '@test-ui/core';
+
+setApplication(Application.create(config.APP));
+
+setTimeout(function () {
+  if (window && window.parent !== window) {
+    // Running tests in an iframe
+    const srv = new MochaTestServer(mocha, {
+      connection: new IFrameServerConnection()
+    });
+    srv.start();
+  } else {
+    // Running tests in a top-level frame
+    mocha.run();
+  }
+}, 400)
