@@ -1,14 +1,9 @@
 // @ts-check
 /* eslint-env node */
-const project = require('ember-cli/lib/models/project');
-const app = require('ember-cli/lib/broccoli/ember-app');
-const Blueprint = require('ember-cli/lib/models/blueprint');
-const fs = require('fs');
-const path = require('path');
+/* eslint-disable node/no-extraneous-require */
 const pathUtil = require('ember-cli-path-utils');
 const stringUtils = require('ember-cli-string-utils');
 const useTestFrameworkDetector = require('../test-framework-detector');
-const VersionChecker = require('ember-cli-version-checker');
 
 /**
  *
@@ -66,9 +61,8 @@ module.exports = useTestFrameworkDetector({
    * @param {*} options
    * @this Blueprint
    */
-  afterInstall(options) {
+  afterInstall() {
     let dependencies = this.project.dependencies();
-    let checker = new VersionChecker(this.project);
     if (('ember-qunit' in dependencies) || ('ember-cli-qunit' in dependencies)) {
       return this.addPackageToProject('@test-ui/qunit');
     } else if (('ember-mocha' in dependencies) || ('ember-cli-mocha' in dependencies)) {
