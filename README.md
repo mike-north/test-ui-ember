@@ -48,3 +48,4 @@ License
 ------------------------------------------------------------------------------
 
 This project is licensed under the [MIT License](LICENSE.md).
+(c) 2018 LinkedIn
