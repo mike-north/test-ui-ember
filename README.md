@@ -17,7 +17,15 @@ ember install @test-ui/ember
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+#### The `{{test-ui-frame}}` component
+
+Use the `{{test-ui-frame}}` component in your `application.hbs` template, optionally passing in a filter to describe a subset of tests to run
+
+```hbs
+<!-- Run Only ESLint Tests -->
+{{test-ui-frame
+  filter='ESLint'}}
+```
 
 
 Contributing
