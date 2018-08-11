@@ -47,5 +47,5 @@ For more information on using ember-cli, visit [https://ember-cli.com/](https://
 License
 ------------------------------------------------------------------------------
 
-This project is licensed under the [MIT License](LICENSE.md).
+This project is licensed under the [BSD 2-Clause License](LICENSE.md).
 (c) 2018 LinkedIn
