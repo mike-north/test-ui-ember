@@ -27,6 +27,14 @@ Use the `{{test-ui-frame}}` component in your `application.hbs` template, option
   filter='ESLint'}}
 ```
 
+Typically, it's desirable to receive data from the tests as/after they run. This component yields a [simple Observable](https://github.com/mike-north/micro-observable) that you may subscribe to
+
+```hbs
+{{/test-ui-frame filter='ESLint' as |api|}}
+  {{data-receiver-component
+    observable=api.data}}
+{{/test-ui-frame}}
+```
 
 Contributing
 ------------------------------------------------------------------------------

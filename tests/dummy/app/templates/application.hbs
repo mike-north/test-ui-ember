@@ -1,2 +1,5 @@
-{{test-ui-frame}}
+{{#test-ui-frame as |api|}}
+{{log api}}
+  {{data-collector observable=api.data}}
+{{/test-ui-frame}}
 {{outlet}}

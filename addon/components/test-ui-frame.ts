@@ -1,9 +1,11 @@
 import Component from '@ember/component';
 import { layout, classNames } from '@ember-decorators/component';
 import hbs from 'htmlbars-inline-precompile';
-import { Client, IFrameConnectionClient } from '@test-ui/core';
+import { Client, IFrameConnectionClient, AnyTestDataEvent } from '@test-ui/core';
 import { debounce } from '@ember/runloop';
 import { Level } from 'bite-log';
+import { Subject } from 'micro-observable';
+import { Observer } from '../../node_modules/micro-observable/dist/types/src/types';
 
 const req = require;
 
@@ -40,9 +42,10 @@ function testClientConstructor(mode: 'qunit' | 'mocha' | 'auto' = 'auto'): { new
 }
 
 @classNames('test-frame')
-@layout(hbs`<div class='test-frame__container'></div>`)
+@layout(hbs`<div class='test-frame__container'></div>{{yield (hash data=data)}}`)
 export default class TestUiFrame extends Component {
   client!: Client;
+  data = new Subject<AnyTestDataEvent>();
   clientReady: boolean = true;
   _filter!: string | RegExp;
   // normal class body definition here
@@ -64,7 +67,7 @@ export default class TestUiFrame extends Component {
       const C = testClientConstructor();
       if (!C) throw new Error('Could not find appropriate @test-ui client constructor ');
       const enabled = envName() !== 'test';
-      this.client = new C({
+      const client = new C({
         logLevel: Level.debug,
         enabled,
         connection: new IFrameConnectionClient({
@@ -72,6 +75,18 @@ export default class TestUiFrame extends Component {
           frame,
           baseUrl: '/tests'
         })
+      });
+      this.set('client', client);
+      client.data.subscribe<Observer<AnyTestDataEvent>>({
+        next: val => {
+          val && this.data.next(val)
+        },
+        complete: () => {
+          this.data.complete()
+        },
+        error: err => {
+          err && this.data.error(err)
+        }
       });
       await this.updateTestFrame();
     } catch (e) {
@@ -95,5 +110,9 @@ export default class TestUiFrame extends Component {
     if (this.clientReady) {
       debounce(this, 'updateTestFrame', 1000);
     }
+  }
+  willDestroy() {
+    super.willDestroy();
+    this.data.complete();
   }
 };
