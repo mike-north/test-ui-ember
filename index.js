@@ -1,6 +1,7 @@
-// @ts-check
 'use strict';
+/* eslint-disable-next-line no-unused-vars, node/no-unpublished-require */
 const project = require('ember-cli/lib/models/project');
+/* eslint-disable-next-line no-unused-vars, node/no-unpublished-require */
 const app = require('ember-cli/lib/broccoli/ember-app');
 
 /**
@@ -55,6 +56,7 @@ module.exports = {
         type: 'test'
       });
     } else {
+      /* eslint-disable-next-line no-console */
       console.warn(
         `[WARNING]: could not identify the testing setup of "${app.name}".
 Expected to find 'ember-cli-qunit', 'ember-cli-mocha' or 'ember-mocha' addons`
