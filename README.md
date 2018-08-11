@@ -1,7 +1,10 @@
 @test-ui/ember
 ==============================================================================
 
-[Short description of the addon.]
+[![Build Status](https://travis-ci.org/mike-north/test-ui-ember.svg?branch=master)](https://travis-ci.org/mike-north/test-ui-ember)
+[![Version](https://img.shields.io/npm/v/@test-ui/ember.svg)](https://www.npmjs.com/package/@test-ui/ember)
+
+[Test-UI](https://github.com/mike-north/test-ui-core) support for [QUnit](https://qunitjs.com/) or [Mocha](https://mochajs.org/) tests in [Ember.js](https://www.emberjs.com/) apps
 
 Installation
 ------------------------------------------------------------------------------
