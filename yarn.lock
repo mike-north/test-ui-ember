@@ -716,21 +716,9 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
 
-"@test-ui/core@^1.0.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@test-ui/core/-/core-1.3.0.tgz#b24eea22265c80a40e10c92e8f149197d98a50e1"
-  dependencies:
-    "@mike-north/types" "^1.0.0"
-    bite-log "^1.6.0"
-    json-typescript "^1.0.1"
-    micro-observable "^1.1.4"
-    object-predicate "^1.0.4"
-    penpal "^3.0.3"
-    youarei "^1.0.3"
-
-"@test-ui/core@^1.2.5":
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/@test-ui/core/-/core-1.2.7.tgz#e6d61e5b994b54c8ce50e8de5d640bf21feae25f"
+"@test-ui/core@^1.0.0", "@test-ui/core@^1.2.5":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@test-ui/core/-/core-1.3.1.tgz#a632e5ea7c2e3f4771afbd80cd650d7be6b8981c"
   dependencies:
     "@mike-north/types" "^1.0.0"
     bite-log "^1.6.0"
