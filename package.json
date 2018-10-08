@@ -41,7 +41,7 @@
     "@types/ember__test-helpers": "^0.7.0",
     "@types/qunit": "^2.5.2",
     "@types/rsvp": "^4.0.2",
-    "babel-eslint": "^9.0.0",
+    "babel-eslint": "^10.0.1",
     "broccoli-asset-rev": "^2.7.0",
     "chai": "^4.1.2",
     "ember-cli": "~3.4.2",
