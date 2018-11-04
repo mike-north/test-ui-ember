@@ -830,9 +830,18 @@
     "@types/ember" "*"
     "@types/ember-test-helpers" "*"
 
-"@types/ember-test-helpers@*", "@types/ember-test-helpers@1.0.0":
+"@types/ember-test-helpers@*":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@types/ember-test-helpers/-/ember-test-helpers-1.0.0.tgz#bc0ac361ab3361726ab6479f9e15f325916d6718"
+  dependencies:
+    "@types/ember" "*"
+    "@types/htmlbars-inline-precompile" "*"
+    "@types/jquery" "*"
+    "@types/rsvp" "*"
+
+"@types/ember-test-helpers@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@types/ember-test-helpers/-/ember-test-helpers-1.0.4.tgz#db08190659339cd6018ff8f842c6df6f24d7679a"
   dependencies:
     "@types/ember" "*"
     "@types/htmlbars-inline-precompile" "*"
