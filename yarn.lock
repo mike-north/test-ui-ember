@@ -903,9 +903,9 @@
   version "10.5.7"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.5.7.tgz#960d9feb3ade2233bcc9843c918d740b4f78a7cf"
 
-"@types/qunit@2.5.2":
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/@types/qunit/-/qunit-2.5.2.tgz#8b1c3fa33017148032c58a6530f66be3239edef9"
+"@types/qunit@2.5.3":
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/@types/qunit/-/qunit-2.5.3.tgz#e7df363b5e1d1ba034b5fdd34b560d5ec0914225"
 
 "@types/rsvp@*", "@types/rsvp@4.0.2":
   version "4.0.2"
