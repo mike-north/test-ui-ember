@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@ember-decorators/babel-transforms": "2.1.2",
-    "@test-ui/qunit": "1.0.9",
+    "@test-ui/qunit": "1.0.10",
     "@types/ember": "2.8.32",
     "@types/ember-qunit": "3.4.0",
     "@types/ember-test-helpers": "1.0.0",

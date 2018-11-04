@@ -814,9 +814,9 @@
     penpal "^3.0.3"
     youarei "^1.0.3"
 
-"@test-ui/qunit@1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@test-ui/qunit/-/qunit-1.0.9.tgz#65b5f2053f4c149bcb56ea53f014fad2a5e985f6"
+"@test-ui/qunit@1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@test-ui/qunit/-/qunit-1.0.10.tgz#bb9e09d68681f53707990a410b7413591781894b"
   dependencies:
     "@test-ui/core" "^1.2.5"
     object-predicate "^1.2.0"
