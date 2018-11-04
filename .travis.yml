@@ -34,10 +34,12 @@ jobs:
   fail_fast: true
   include:
     - stage: basic test
-      env: EMBER_TRY_SCENARIO=ember-release
+      env: EMBER_TRY_SCENARIO=ember-release-qunit
+      env: EMBER_TRY_SCENARIO=ember-release-mocha
     - stage: additional tests
       env: EMBER_TRY_SCENARIO=ember-lts-2.12
     - env: EMBER_TRY_SCENARIO=ember-lts-2.16
+    - env: EMBER_TRY_SCENARIO=ember-lts-2.18
     - env: EMBER_TRY_SCENARIO=ember-beta
     - env: EMBER_TRY_SCENARIO=ember-canary
 
