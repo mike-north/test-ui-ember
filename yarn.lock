@@ -854,11 +854,16 @@
     "@types/jquery" "*"
     "@types/rsvp" "*"
 
-"@types/ember__test-helpers@0.7.3":
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/@types/ember__test-helpers/-/ember__test-helpers-0.7.3.tgz#9d260d6e7cd15a1c869005d4297d37598695ded3"
+"@types/ember__error@*":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@types/ember__error/-/ember__error-3.0.2.tgz#a30c0e51215feaaa7a32e341c5a04bd601a01d1b"
+
+"@types/ember__test-helpers@0.7.6":
+  version "0.7.6"
+  resolved "https://registry.yarnpkg.com/@types/ember__test-helpers/-/ember__test-helpers-0.7.6.tgz#f26050fc74cd8ce111ee9e01864a293d6a9ac7ac"
   dependencies:
     "@types/ember" "*"
+    "@types/ember__error" "*"
     "@types/htmlbars-inline-precompile" "*"
 
 "@types/estree@0.0.39":
