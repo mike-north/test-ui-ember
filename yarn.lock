@@ -1125,10 +1125,10 @@
     penpal "^3.0.3"
     youarei "^1.0.3"
 
-"@test-ui/qunit@1.0.10":
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/@test-ui/qunit/-/qunit-1.0.10.tgz#bb9e09d68681f53707990a410b7413591781894b"
-  integrity sha512-m8+RxC6nPPlKgYNso1os+Dj5FyvCajwj8p9PXPKZT6ohPhzos3bNHfHUaOAeaiJO5fLbnGS5cRrC5pHcgOiq+Q==
+"@test-ui/qunit@1.0.11":
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@test-ui/qunit/-/qunit-1.0.11.tgz#fc85f4d6d5c7d703fc0b82e90d2a49f44bafba63"
+  integrity sha512-Fg/YRw1E2avLcif9XluTfxNcSu80Nx3uwdMBpLvJ1d4K+7605dfbh/CZGTxjKaCnLzsn5n+T3Q5gcC/fmIWtfA==
   dependencies:
     "@test-ui/core" "^1.2.5"
     object-predicate "^1.2.0"
