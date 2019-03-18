@@ -1190,14 +1190,29 @@
     "@types/jquery" "*"
     "@types/rsvp" "*"
 
-"@types/ember@2.8.35":
-  version "2.8.35"
-  resolved "https://registry.yarnpkg.com/@types/ember/-/ember-2.8.35.tgz#729c42027f32bf782450834776f31902fccd06f4"
-  integrity sha512-W0DkMQmA5Vzr14mCiykbRxui1LWNx/KV+DRSIPkoYYpcteIgLyYCC7yr1h0JeVvFNYqgrzatNiuctQGCKfCz/Q==
+"@types/ember@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@types/ember/-/ember-3.1.0.tgz#3c44b846c41a1340bc823910f9222746585b3314"
+  integrity sha512-RHP/N7k81XIS16DLF/yTfnWEKdFFftRAUgjWO1oKNJ5ho3+iTH3vVq8u11PrhaHd+FHXNB1XKV20d5o1KEOnUQ==
   dependencies:
+    "@types/ember__application" "*"
+    "@types/ember__array" "*"
+    "@types/ember__component" "*"
+    "@types/ember__controller" "*"
+    "@types/ember__debug" "*"
+    "@types/ember__engine" "*"
+    "@types/ember__error" "*"
+    "@types/ember__object" "*"
+    "@types/ember__polyfills" "*"
+    "@types/ember__routing" "*"
+    "@types/ember__runloop" "*"
+    "@types/ember__service" "*"
+    "@types/ember__string" "*"
+    "@types/ember__test" "*"
+    "@types/ember__utils" "*"
+    "@types/htmlbars-inline-precompile" "*"
     "@types/jquery" "*"
     "@types/rsvp" "*"
-    handlebars "^4.1.0"
 
 "@types/ember__application@*":
   version "3.0.7"
