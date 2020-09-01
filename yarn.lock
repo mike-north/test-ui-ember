@@ -5284,10 +5284,10 @@ ember-cli-version-checker@^5.1.1:
     semver "^7.3.2"
     silent-error "^1.1.1"
 
-ember-cli@3.20.0:
-  version "3.20.0"
-  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-3.20.0.tgz#729c62ce0cb2804237155886619acc54c77255dc"
-  integrity sha512-I5mybMo1vmsKRnC7uWuuxldla+45CsJ0TIHIm+qovaKyGBx+TSW8zMoBvnogMSyu8+hDMEqsxLblH9ZSF4hKpg==
+ember-cli@3.20.1:
+  version "3.20.1"
+  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-3.20.1.tgz#2501213b1bb1c398bd647d2f00bd390eb05feb3e"
+  integrity sha512-phEldscXy8EB+0XxcemiqHPH5WviIufL4bflB6VdrdkuGMdO51GiPyy+EpqoTvx8kUAtkwNHmOMxJjrxWEtVZg==
   dependencies:
     "@babel/core" "^7.10.2"
     "@babel/plugin-transform-modules-amd" "^7.10.4"
@@ -5429,10 +5429,10 @@ ember-qunit@^3.5.0:
     ember-cli-test-loader "^2.2.0"
     qunit "~2.6.0"
 
-ember-resolver@8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/ember-resolver/-/ember-resolver-8.0.1.tgz#d96a670db0b5548b38798d9dd8a811f812d1ce00"
-  integrity sha512-oYxbXwV9aOLh6SnQxeVXGcn+80iIA58pcC/AW6gStKNPc9iuTAnQfgqj+JCESHiA3EYvlHx6OgZ3ZfV6aVgUAQ==
+ember-resolver@8.0.2:
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/ember-resolver/-/ember-resolver-8.0.2.tgz#8a45a744aaf5391eb52b4cb393b3b06d2db1975c"
+  integrity sha512-BmCoPT8nf5uv0g2QkhMsrG1Gmu6MtXd6igfhCVzCTMTwZ97SxhJKqoMY62EP/av5HVSWBC/Sa1uGU5cQvX1Aog==
   dependencies:
     babel-plugin-debug-macros "^0.3.3"
     broccoli-funnel "^3.0.3"
