@@ -68,7 +68,7 @@
     "ember-resolver": "8.0.3",
     "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/0e33c7b9c035e057fe0c5ae7118ff6250245638e.tgz",
     "ember-source-channel-url": "2.0.1",
-    "ember-try": "1.2.1",
+    "ember-try": "2.0.0",
     "eslint-plugin-ember": "10.5.8",
     "eslint-plugin-node": "11.1.0",
     "husky": "2.4.1",
