@@ -1601,32 +1601,7 @@
     "@types/jquery" "*"
     "@types/rsvp" "*"
 
-"@types/ember@3.1.2":
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/@types/ember/-/ember-3.1.2.tgz#b795e41f4a5569447c006e293195e62dc139cced"
-  integrity sha512-Z4jxklUlnoWEkenLaMDDmzguL3UUcAIaCiu28nNYlIovWTGmvKuJgUKSqd+03j4jjzaz+yz0fepM408XULew/A==
-  dependencies:
-    "@types/ember__application" "*"
-    "@types/ember__array" "*"
-    "@types/ember__component" "*"
-    "@types/ember__controller" "*"
-    "@types/ember__debug" "*"
-    "@types/ember__engine" "*"
-    "@types/ember__error" "*"
-    "@types/ember__object" "*"
-    "@types/ember__polyfills" "*"
-    "@types/ember__routing" "*"
-    "@types/ember__runloop" "*"
-    "@types/ember__service" "*"
-    "@types/ember__string" "*"
-    "@types/ember__template" "*"
-    "@types/ember__test" "*"
-    "@types/ember__utils" "*"
-    "@types/htmlbars-inline-precompile" "*"
-    "@types/jquery" "*"
-    "@types/rsvp" "*"
-
-"@types/ember@^3":
+"@types/ember@3.16.14", "@types/ember@^3":
   version "3.16.14"
   resolved "https://registry.yarnpkg.com/@types/ember/-/ember-3.16.14.tgz#9078407934ac7f7d8e04e35a0b8b7483dcd01b72"
   integrity sha512-m3fM87W1J75ri9Uu79hzKimiAhxdAF3dZyzmwGrf4OPPQp3yt2L9uHAkwmMIxstk4F1rBWG/SHJOnvlqif23Rw==
@@ -1989,10 +1964,10 @@
   resolved "https://registry.yarnpkg.com/@types/qunit/-/qunit-2.11.2.tgz#4cb99ae3ea6afe94b9c4cfd3ab715a285729ca9c"
   integrity sha512-Bt0fz9l8sWxqP+cjoqWQyNVyOPPK+7GPhKIKLLTi7llR0FV+pyd50FXTXafZeZnsFVUgXw4pdupydz75E6vxjQ==
 
-"@types/qunit@2.9.6":
-  version "2.9.6"
-  resolved "https://registry.yarnpkg.com/@types/qunit/-/qunit-2.9.6.tgz#5d6ba092920edf9dc7377f5091e36eb448743a02"
-  integrity sha512-FfKb3sBW9sdjj8mPzAXtsKn53sOHpzi4PZj0H7P5G24VruwaOmvi0L2kJpuYARQjOKRl/YVlZQ6JWPnspWOkZA==
+"@types/qunit@2.19.12":
+  version "2.19.12"
+  resolved "https://registry.yarnpkg.com/@types/qunit/-/qunit-2.19.12.tgz#4cd42684d0473a6e40b6c2ca9196cb88f974bd36"
+  integrity sha512-II+C1wgzUia0g+tGAH+PBb4XiTm8/C/i6sN23r21NNskBYOYrv+qnW0tFQ/IxZzKVwrK4CTglf8YO3poJUclQA==
 
 "@types/range-parser@*":
   version "1.2.4"
